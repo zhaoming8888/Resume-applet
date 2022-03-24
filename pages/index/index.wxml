@@ -1,0 +1,51 @@
+<block wx:for="{{dwsList}}" wx:key wx:for-index="index" wx:for-item="LinksList" wx:key="key">
+<view class="container" bindtouchmove='handletouchmove'>
+	<view class="content content-intro">
+		<view class="content-inner" animation="{{animationData}}" style="position: relative; left: 0rpx; top: -84rpx">
+			<view class="wrap fade in">
+				
+				<text class="content-title">{{LinksList.name}}</text>
+				
+				<view class="content-subtitle">
+					<text>j</text>
+					<text>a</text>
+					<text>v</text>
+					<text>a</text>
+					<text>程</text>
+					<text>序</text>
+					<text>员</text>
+					<text>简</text>
+					<text>历</text>
+				</view>
+				<view bind:tap="nextpage" class="enter {{entercolor}}" data-flag="true">enter</view>
+				<view bind:tap="nextpage" class="arrowicon" data-flag="false">
+					<view class="arrow arrow-1"></view>
+					<view class="arrow arrow-2"></view>
+				</view>
+			</view>
+			<image class="fade-image" src="../../images/1.png" />
+		</view>
+		<view class="content content-main">
+			<view id="page">
+				<view id="card">
+					<view class="card-inner">
+						<view class="banner_img">
+							<image alt="avatar" class="userhead" src='cloud://cloud1-2goey71p41951d12.636c-cloud1-2goey71p41951d12-1304445380/logo.png' />
+						</view>
+						<view class="signature">
+							<text class="cardname" bindtap="toUserList">林赵铭</text>
+							<text class="print">Code & Input & Output</text>
+						</view>
+					</view>
+					<view class='nav-list'>
+						<view bindtap="toPage" hover-class='none' data-url="/pages/{{item.name}}/{{item.name}}" class="nav-li bg-{{item.color}}" wx:for="{{elements}}" wx:key="key">
+							<i class='iconfont icon-{{item.icon}}'></i>
+							<view class="nav-name">{{item.title}}</view>
+						</view>
+					</view>
+				</view>
+			</view>
+		</view>
+	</view>
+</view>
+</block>

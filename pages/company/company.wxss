@@ -1,0 +1,16 @@
+/* pages/company/company.wxss */
+page {
+    background-color: #fff;
+}
+
+.icon-right-fill {
+    font-size: 10px;
+}
+
+.title {
+    margin-bottom: 10px;
+}
+
+.last-panel {
+    padding-bottom: 100rpx !important;
+}

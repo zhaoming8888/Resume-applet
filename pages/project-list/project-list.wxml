@@ -1,0 +1,22 @@
+					<cu-custom bgColor="bg-gradual-pink" isCustom="{{true}}">
+						<view slot="content">项目列表</view>
+					</cu-custom>
+					<scroll-view scroll-y class="DrawerPage">
+						<block wx:for="{{projectList}}" wx:key="key" wx:for-index="index" wx:for-item="LinksList">
+							<view class="margin-sm FriendsRound shadow-blur {{colourList[(index+randomNum)%10].colour}} animation-slide-bottom margin-lr-df margin-tb-df " style="animation-delay: {{(index+1)*0.5*animationTime}}s;">
+								<view class="flex-sub align-end" style="border-radius:6rpx; height:100%;" bindtap="toProject" data-id="{{LinksList.ids}}">
+									<view class="padding-sm text-white">
+										<view class="padding-xs flex flex-wrap align-center">
+											<view class="basis-xs">
+												<view class="cu-avatar xl round shadow-blur margin-right-lg" style="background-image:url({{LinksList.pic}});"></view>
+											</view>
+											<view class="grid col-1" style="flex-basis: 74%">
+												<view class="margin-bottom-sm text-xl text-bold text-shadow">{{LinksList.name}}</view>
+												<view class="text-shadow margin-bottom-sm">{{LinksList.remark}}</view>
+											</view>
+										</view>
+									</view>
+								</view>
+							</view>
+						</block>
+					</scroll-view>

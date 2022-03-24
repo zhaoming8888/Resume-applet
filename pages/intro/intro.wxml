@@ -1,0 +1,72 @@
+<cu-custom bgImage="https://image.weilanwl.com/color2.0/plugin/sylb2244.jpg" isBack="{{true}}">
+	<view slot="backText">返回</view>
+	<view slot="content">个人简介</view>
+</cu-custom>
+<view class="padding">
+	<view class="padding-xl radius shadow-warp bg-white margin-top">
+		<view class="flex justify-center">
+			<image class="cu-avatar xl round" src="cloud://cloud1-2goey71p41951d12.636c-cloud1-2goey71p41951d12-1304445380/logo.png"></image>
+		</view>
+		<view class="flex justify-center margin-top-sm">
+			<text class="text-bold">林赵铭</text>
+		</view>
+		<view class="flex justify-center margin-top-sm">
+			<text>期望职位：</text>
+			<text class="text-shadow text-orange">java程序员</text>
+		</view>
+		<view class="flex justify-center margin-top-sm">
+			<text>男</text>
+			<text class="margin-left-sm">27岁</text>
+			<text class="margin-left-sm">3年工作经验</text>
+		</view>
+		<view class="flex justify-around margin-top-sm">
+			<view bindtap="showQrcode">
+				<text class="cuIcon-weixin text-xl text-blue"></text>
+				<text class="margin-left-xs">添加微信</text>
+			</view>
+			<view bindtap="phoneCall">
+				<text class="cuIcon-phone text-xl text-blue"></text>
+				<text class="margin-left-xs">拨打电话</text>
+			</view>
+			<view bindtap="saveContact">
+				<text class="cuIcon-addressbook text-xl text-blue"></text>
+				<text class="margin-left-xs">保存通讯录</text>
+			</view>
+		</view>
+	</view>
+	<view class="padding-xl radius shadow-warp bg-white margin-top format">
+		<view class="cuIcon-group_fill text-xl text-blue text-center"></view>
+		<view class="edu margin-top text-center text-bold"></view>
+		<view class="margin-top">
+			<text class="cuIcon-time"></text>
+			<text class="margin-left-sm">2018年毕业</text>
+		</view>
+		<view class="margin-top-sm">
+			<text class="cuIcon-home"></text>
+			<text class="margin-left-sm">吉林交通职业技术学院</text>
+		</view>
+		<view class="margin-top-sm">
+			<text class="cuIcon-attentionfavor"></text>
+			<text class="margin-left-sm">电子信息工程技术</text>
+		</view>
+	</view>
+	<view class="padding-xl radius shadow-warp bg-white margin-top">
+		<view class="cuIcon-medalfill text-xl text-blue text-center"></view>
+		<view class="medalfill margin-top text-center text-bold"></view>
+		<view class="margin-top evaluate-cont">
+			<text>2016年6月参加大学生“互联网+”创新创业大赛 获得银奖</text>
+			<text>2016年8月创建互联网＋创业联盟社团（组织同学交流创新知识）</text>
+			<text>2016年12月参加吉林省计算机网络应用大赛 ，获得三等奖</text>
+			<text>2018年5月设计吉林交通职业技术学院60周年校庆标志</text>
+		</view>
+	</view>
+	<view class="padding-xl radius shadow-warp bg-white margin-top last-panel">
+		<view class="cuIcon-appreciatefill text-xl text-blue text-center"></view>
+		<view class="evaluate margin-top text-center text-bold"></view>
+		<view class="margin-top evaluate-cont">
+			<text>工作认真负责，能很好完成领导交代的任务。 </text>
+			<text>喜欢研究新技术，平时有时间就看视频，补不足。</text>
+			<text>喜欢逛码云、gitHub找一些有意思的开源项目或者功能学习然后加到自己个人项目中，已有个人博客、个人简历等三个开源项目。</text>
+		</view>
+	</view>
+</view>

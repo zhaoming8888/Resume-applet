@@ -1,0 +1,96 @@
+			<cu-custom bgImage="https://image.weilanwl.com/color2.0/plugin/wdh2236.jpg" isBack="{{true}}">
+				<view slot="backText">返回</view>
+				<view slot="content">职业技能</view>
+			</cu-custom>
+			<view class="padding text-center  intro-skill">
+				<view class="padding-xl radius shadow bg-white main-intro">
+					<view class="cu-bar bg-white margin-top">
+						<view class="action">
+							<text class="cuIcon-title text-red"></text>
+							后端技能
+						</view>
+					</view>
+					<view class="padding bg-white">熟练应用ThinkPHP、Larave等开发框架</view>
+					<view class="padding bg-white">有ThinkPHP系统开发经验，熟悉WEB网站应用开发</view>
+					<view class="padding bg-white">熟悉Mysql数据库开发技术</view>
+					<view class="padding bg-white">使用过 Git 进行版本管理</view>
+				</view>
+				<view class="padding-xl radius shadow bg-white main-intro">
+					<view class="cu-bar bg-white margin-top">
+						<view class="action">
+							<text class="cuIcon-title text-yellow"></text>
+							前端技能
+						</view>
+					</view>
+					<view class="padding bg-white">熟悉 HTML /CSS /JQuery / JavaScript 等前端技术</view>
+					<view class="padding bg-white">熟练使用 BootStrap / Vue /Layui /微信小程序 等前端框架/技术进行项目开发</view>
+					<view class="padding bg-white">熟练使用微信开发者工具、vsCode工具</view>
+					<view class="padding bg-white">使用过微信小程序云开发</view>
+				</view>
+			</view>
+			<view class="cu-bar bg-white  margin-top">
+				<view class="action">
+					<text class="cuIcon-title text-blue"></text>
+					ThinkPHP
+				</view>
+			</view>
+			<view class="padding bg-white">
+				<view class="cu-progress round striped active">
+					<view class="bg-blue" style="width:{{loading?'70%':''}};">70%</view>
+				</view>
+			</view>
+			<view class="cu-bar bg-white  margin-top">
+				<view class="action">
+					<text class="cuIcon-title text-orange"></text>
+					Mysql数据库
+				</view>
+			</view>
+			<view class="padding bg-white">
+				<view class="cu-progress round striped active">
+					<view class="bg-orange" style="width:{{loading?'65%':''}};">65%</view>
+				</view>
+			</view>
+			<view class="cu-bar bg-white  margin-top">
+				<view class="action">
+					<text class="cuIcon-title text-yellow"></text>
+					HTML /CSS /jQuery /JavaScript
+				</view>
+			</view>
+			<view class="padding bg-white">
+				<view class="cu-progress round striped active">
+					<view class="bg-yellow" style="width:{{loading?'70%':''}};">70%</view>
+				</view>
+			</view>
+			<view class="cu-bar bg-white  margin-top">
+				<view class="action">
+					<text class="cuIcon-title text-olive"></text>
+					BootStrap /Layui
+				</view>
+			</view>
+			<view class="padding bg-white">
+				<view class="cu-progress round striped active">
+					<view class="bg-olive" style="width:{{loading?'65%':''}};">60%</view>
+				</view>
+			</view>
+			<view class="cu-bar bg-white  margin-top">
+				<view class="action">
+					<text class="cuIcon-title text-mauve"></text>
+					小程序开发
+				</view>
+			</view>
+			<view class="padding bg-white">
+				<view class="cu-progress round striped active">
+					<view class="bg-mauve" style="width:{{loading?'65%':''}};">60%</view>
+				</view>
+			</view>
+			<view class="cu-bar bg-white  margin-top">
+				<view class="action">
+					<text class="cuIcon-title text-cyan"></text>
+					Git
+				</view>
+			</view>
+			<view class="padding bg-white">
+				<view class="cu-progress round striped active">
+					<view class="bg-cyan" style="width:{{loading?'50%':''}};">50%</view>
+				</view>
+			</view>

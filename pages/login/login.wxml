@@ -1,0 +1,17 @@
+<cu-custom bgImage="https://image.weilanwl.com/color2.0/plugin/sylb2244.jpg" isBack="{{true}}">
+  <view slot="backText">返回</view>
+  <view slot="content">授权登录</view>
+</cu-custom>
+<view wx:if="{{canIUse}}">
+    <view class='header'>
+        <image src='/images/2.png'></image>
+    </view>
+    <view class='content'>
+        <view>申请获取以下权限</view>
+        <text>获得你的公开信息(昵称，头像等)</text>
+    </view>
+    <button class='bottom' type='primary' open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="bindGetUserInfo">
+        授权登录
+    </button>
+</view>
+<view wx:else>请升级微信版本</view>

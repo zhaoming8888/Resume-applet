@@ -1,0 +1,47 @@
+<cu-custom bgColor="bg-gradual-blue" isBack="{{true}}">
+	<view slot="backText">返回</view>
+	<view slot="content">火烈鸟商场</view>
+</cu-custom>
+<view class="padding text-center  intro-skill">
+	<view class="padding-xl radius shadow bg-white main-intro">
+		<view class="cu-bar bg-white  margin-top">
+			<view class="action">
+				<text class="cuIcon-title text-red"></text>
+				技术架构
+			</view>
+		</view>
+		<view class="padding bg-white">前端技术架构：LayUI+JQuery，工具VScode</view>
+		<view class="padding bg-white">后端语言：PHP</view>
+		<view class="padding bg-white">后端技术架构：ThinkPHP mysql</view>
+	</view>
+</view>
+<view class="padding text-center  intro-skill">
+	<view class="padding-xl radius shadow bg-white main-intro">
+		<view class="cu-bar bg-white  margin-top">
+			<view class="action">
+				<text class="cuIcon-title text-red"></text>
+				职责与技术难点
+			</view>
+		</view>
+		<view class="padding bg-white"> 职责：独立开发此项目并在Gitee上开源。该项目前端采用贤心大佬作品下的LayUI框架，后端是基于ThinkPHP开发的。实现了用户可以商品管理、订单管理、运营管理等功能。演示网址：https://wxx.cs567.net/</view>
+		<view class="padding bg-white">技术难点：</view>
+		<view class="padding bg-white"> 1.属于个人业余作品，技术难点就是时间不够用，很多东西尚未完成。</view>
+		<view class="padding bg-white"> 2.申请备案比较麻烦，对接QQ互联也比较繁琐。</view>
+	</view>
+</view>
+<block wx:for="{{dataList}}" wx:key="key">
+	<view class="padding-xl radius shadow bg-white main-intro">
+		<block wx:for="{{item.descriptionList}}" wx:for-item="desc" wx:key="key">
+			<view class="padding bg-white">
+				<text class=" text-blue" style="font-size:15px">
+				{{desc}}
+				</text>
+			</view>
+		</block>
+	</view>
+	<view class="margin-top padding  shadow intro-project">
+		<ng-container wx:for="{{item.imageUrlList}}" wx:for-item="imageUrl" wx:key="key">
+			<image bind:tap="clickImg" src="{{imageUrl}}" mode="widthFix" data-url="{{imageUrl}}" class="img" />
+		</ng-container>
+	</view>
+</block>

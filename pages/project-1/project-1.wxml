@@ -1,0 +1,48 @@
+<cu-custom bgColor="bg-gradual-blue" isBack="{{true}}">
+	<view slot="backText">返回</view>
+	<view slot="content">鸿程BRP2.0系统</view>
+</cu-custom>
+<view class="padding text-center  intro-skill">
+	<view class="padding-xl radius shadow bg-white main-intro">
+		<view class="cu-bar bg-white  margin-top">
+			<view class="action">
+				<text class="cuIcon-title text-red"></text>
+				技术架构
+			</view>
+		</view>
+		<view class="padding bg-white">前端技术架构：BootStrap+Layer，工具VScode</view>
+		<view class="padding bg-white">后端语言：C#</view>
+		<view class="padding bg-white">后端技术架构：ASP.NET MVC+EF+SqlServer+Unity</view>
+	</view>
+</view>
+<view class="padding text-center  intro-skill">
+	<view class="padding-xl radius shadow bg-white main-intro">
+		<view class="cu-bar bg-white  margin-top">
+			<view class="action">
+				<text class="cuIcon-title text-red"></text>
+				职责与技术难点
+			</view>
+		</view>
+		<view class="padding bg-white">职责：独立负责会员、报表、基本信息等模块。</view>
+		<view class="padding bg-white">技术难点：</view>
+		<view class="padding bg-white">1.报表数据加载量较大，且大多为多表头，前期测试采用LINQ+Lambda分页，后期改为存储过程分页。</view>
+		<view class="padding bg-white">2.对接扫码枪，方便销售人员扫条形码。</view>
+		<view class="padding bg-white">3.打印小票，要根据小票票据模型参考打印，将数据显示到小票模型上，参数无误后再执行打印。</view>
+	</view>
+</view>
+<block wx:for="{{dataList}}" wx:key="key">
+	<view class="padding-xl radius shadow bg-white main-intro">
+		<block wx:for="{{item.descriptionList}}" wx:for-item="desc">
+			<view class="padding bg-white">
+				<text class=" text-blue" style="font-size:15px">
+				{{desc}}
+				</text>
+			</view>
+		</block>
+	</view>
+	<view class="margin-top padding  shadow intro-project">
+		<ng-container wx:for="{{item.imageUrlList}}" wx:for-item="imageUrl">
+			<image bind:tap="clickImg" src="{{imageUrl}}" mode="widthFix" data-url="{{imageUrl}}" class="img" />
+		</ng-container>
+	</view>
+</block>

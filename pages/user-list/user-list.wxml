@@ -1,0 +1,25 @@
+					<cu-custom bgColor="bg-gradual-pink" isCustom="{{true}}">
+						<view slot="content">你好，陌生人</view>
+					</cu-custom>
+					<scroll-view scroll-y class="DrawerPage {{modalName=='viewModal'?'show':''}}">
+
+						<block wx:for="{{userList}}" wx:key wx:for-index="index" wx:for-item="LinksList" wx:key="key">
+							<view class="margin-sm FriendsRound shadow-blur {{colourList[(index+randomNum)%10].colour}} animation-slide-bottom margin-lr-df margin-tb-df " style="animation-delay: {{(index+1)*0.5*animationTime}}s;">
+								<view class="flex-sub align-end" style="border-radius:6rpx; height:100%;" bindtap="show" data-index="{{index}}">
+									<view class="padding-sm text-white">
+										<view class="padding-xs flex flex-wrap align-center">
+											<view class="basis-xs">
+												<view class="cu-avatar xl round shadow-blur margin-right-lg" style="background-image:url({{LinksList.avatarUrl}});"></view>
+											</view>
+											<view class="grid col-1" style="flex-basis: 74%">
+												<view class="margin-bottom-sm text-xl text-bold text-shadow">{{LinksList.nickName}}</view>
+												<view class="text-shadow margin-bottom-sm" wx:if="{{LinksList.gender == 1}}">一位帅气的小哥哥</view>
+												<view class="text-shadow margin-bottom-sm" wx:if="{{LinksList.gender == 2}}">一位漂亮的小姐姐</view>
+												<!-- <view class="text-shadow text-bold" style="text-align: right;">{{LinksList.headpic}}</view> -->
+											</view>
+										</view>
+									</view>
+								</view>
+							</view>
+						</block>
+					</scroll-view>

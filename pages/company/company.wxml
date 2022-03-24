@@ -1,0 +1,32 @@
+<cu-custom bgColor="bg-gradual-blue" isBack="{{true}}">
+	<view slot="backText">返回</view>
+	<view slot="content">工作经历</view>
+</cu-custom>
+<view class="cu-timeline">
+	<view class="cu-item  text-cyan">
+		<view class="content">
+			<view class="title">长春市雅凡广告有限公司</view>
+			<view class="cu-capsule radius">
+				<view class="cu-tag bg-cyan">工作</view>
+				<view class="cu-tag line-cyan">2018年6月-2019年7月</view>
+			</view>
+			<view class="margin-top">
+				工作内容：1.根据公司要求和客户需求，主要负责公司平面设计（ps）、视频制作(AE)。2.负责公司网站建设和日常公众号运营。
+			</view>
+		</view>
+	</view>
+</view>
+<view class="cu-timeline">
+	<view class="cu-item  text-cyan">
+		<view class="content">
+			<view class="title">北京天佑方舟科技有限公司</view>
+			<view class="cu-capsule radius">
+				<view class="cu-tag bg-cyan">工作</view>
+				<view class="cu-tag line-cyan">2019年8月-至今</view>
+			</view>
+			<view class="margin-top">
+				工作内容：1.根据客户需求，负责搭建符合要求的网站（php+mysql)。2.负责带新人、给其他技术分配网站任务、监督工期和日常公司服务器网络运维。
+			</view>
+		</view>
+	</view>
+</view>
