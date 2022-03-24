@@ -1,0 +1,26 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/intro/intro",
+    "pages/company/company",
+    "pages/skill/skill",
+    "pages/project/project",
+    "pages/project-list/project-list",
+    "pages/project-1/project-1",
+    "pages/project-2/project-2",
+    "pages/project-3/project-3",
+    "pages/project-4/project-4",
+    "pages/login/login",
+    "pages/user-list/user-list"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle": "black"
+  },
+  "usingComponents": {
+    "cu-custom": "/colorui/components/cu-custom"
+  },
+  "sitemapLocation": "sitemap.json"
+}
